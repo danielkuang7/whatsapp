@@ -7,6 +7,7 @@ export default function Login() {
             <Form>
                 <Form.Group>
                     <Form.label>Enter Your ID</Form.label>
+                    <Form.Control type="text"></Form.Control>
                 </Form.Group>
             </Form>
         </Container>
