@@ -12,7 +12,7 @@ export default function Login() {
                     <Form.Control type="text" ref={idRef} required />                       
                 </Form.Group>
                 <Button type="submit">Login</Button>
-                <Button>Login</Button>
+                <Button variant="secondary">Create A New Id</Button>
             </Form>
         </Container>
     )
