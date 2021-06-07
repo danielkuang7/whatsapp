@@ -4,6 +4,10 @@ import { Container, Form } from 'react-bootstrap'
 export default function Login() {
     const idRef = useRef()
 
+    function handleSubmit(e){
+        e.preventDefault()
+    }
+
     return (
         <Container className="align-items-center d-flex" style={{ height: '100vh'}}>
             <Form onSubmit={handleSubmit} className="w-100">
