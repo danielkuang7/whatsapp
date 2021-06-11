@@ -7,7 +7,7 @@ export default function Login( {onIdSubmit} ) {
     function handleSubmit(e){
         e.preventDefault()
 
-        onIdSubmit()
+        onIdSubmit(idRef.current.value)
     }
 
     return (
