@@ -3,7 +3,12 @@ import Login from './Login'
 
 function App() {
   const [id, setId] = useState()
-  return <Login onIdSubmit={setId}/>
+  return ( 
+    <>
+      {id}
+      <Login onIdSubmit={setId}/>
+      </>
+  )
 }
 
 export default App;
