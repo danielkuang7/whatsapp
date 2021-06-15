@@ -7,7 +7,7 @@ function App() {
     <>
       {id}
       <Login onIdSubmit={setId}/>
-      </>
+    </>
   )
 }
 
