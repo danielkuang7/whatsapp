@@ -11,6 +11,10 @@ export default function Login( {onIdSubmit} ) {
         onIdSubmit(idRef.current.value)
     }
 
+    function createNewId(){
+        
+    }
+
     return (
         <Container className="align-items-center d-flex" style={{ height: '100vh'}}>
             <Form onSubmit={handleSubmit} className="w-100">
