@@ -12,7 +12,7 @@ export default function Login( {onIdSubmit} ) {
     }
 
     function createNewId(){
-        
+        onIdSubmit(uuidV4())
     }
 
     return (
