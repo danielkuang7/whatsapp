@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import useLocalStorage from '../hooks/useLocalStorage';
 import Login from './Login'
+import useLocalStorage from '../hooks/useLocalStorage';
 
 function App() {
-  const [id, setId] = useState()
+  const [id, setId] = useLocalStorage()
   return ( 
     <>
       {id}
