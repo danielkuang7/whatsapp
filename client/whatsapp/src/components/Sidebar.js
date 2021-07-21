@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Dashboard({id}) {
+export default function Sidebar() {
     return (
         <div>
-            {id}
+            
         </div>
     )
 }
