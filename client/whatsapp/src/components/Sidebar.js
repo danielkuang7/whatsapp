@@ -6,7 +6,9 @@ export default function Sidebar({id}) {
         <div style={{ width: '250px'}} className="d-flex flex-column">
             <Tab.Container>
             <Nav>
-                
+                <Nav.Item>
+                    
+                </Nav.Item>
             </Nav>
             </Tab.Container>
 
