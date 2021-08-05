@@ -7,7 +7,7 @@ export default function Sidebar({id}) {
             <Tab.Container>
             <Nav>
                 <Nav.Item>
-                    <Nav.Link>Conversations</Nav.Link>
+                    <Nav.Link eventKey="conversations">Conversations</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                     <Nav.Link eventKey="contacts">Contacts</Nav.Link>
