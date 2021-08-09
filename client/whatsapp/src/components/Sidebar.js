@@ -2,6 +2,8 @@ import React from 'react'
 import { Tab, Nav } from 'react-bootstrap'
 
 const CONVERSATIONS_KEY = "conversations"
+const CONTACTS_KEY = "contacts"
+
 
 export default function Sidebar({id}) {
     return (
