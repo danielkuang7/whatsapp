@@ -11,10 +11,10 @@ export default function Sidebar({id}) {
             <Tab.Container>
             <Nav>
                 <Nav.Item>
-                    <Nav.Link eventKey="conversations">Conversations</Nav.Link>
+                    <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="contacts">Contacts</Nav.Link>
+                    <Nav.Link eventKey={CONTACTS_KEY}>Contacts</Nav.Link>
                 </Nav.Item>
             </Nav>
             </Tab.Container>
