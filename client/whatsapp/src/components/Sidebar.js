@@ -6,9 +6,10 @@ const CONTACTS_KEY = "contacts"
 
 
 export default function Sidebar({id}) {
+    const [activeKey, setActiveKey] = useState(CONVERSATIONS_KEY)
     return (
         <div style={{ width: '250px'}} className="d-flex flex-column">
-            <Tab.Container>
+            <Tab.Container activeKey={activeKey}>
             <Nav variant="tabs" className="justify-content-center">
                 <Nav.Item>
                     <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
