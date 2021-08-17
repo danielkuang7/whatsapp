@@ -12,7 +12,7 @@ export default function Sidebar({id}) {
             <Tab.Container activeKey={activeKey}>
             <Nav variant="tabs" className="justify-content-center">
                 <Tab.Content>
-                    <Tab.Pane eventKey={}>
+                    <Tab.Pane eventKey={CONVERSATIONS_KEY}>
                         
                     </Tab.Pane>
                 </Tab.Content>
