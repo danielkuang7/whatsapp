@@ -11,6 +11,9 @@ export default function Sidebar({id}) {
         <div style={{ width: '250px'}} className="d-flex flex-column">
             <Tab.Container activeKey={activeKey}>
             <Nav variant="tabs" className="justify-content-center">
+                <Tab.Content>
+                    
+                </Tab.Content>
                 <Nav.Item>
                     <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
                 </Nav.Item>
