@@ -9,7 +9,7 @@ export default function Sidebar({id}) {
     const [activeKey, setActiveKey] = useState(CONVERSATIONS_KEY)
     return (
         <div style={{ width: '250px'}} className="d-flex flex-column">
-            <Tab.Container activeKey={activeKey}>
+            <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
             <Nav variant="tabs" className="justify-content-center">
                 <Tab.Content>
                     <Tab.Pane eventKey={CONVERSATIONS_KEY}>
