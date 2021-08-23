@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Tab, Nav } from 'react-bootstrap'
+import Conversations from './Conversations'
 
 const CONVERSATIONS_KEY = "conversations"
 const CONTACTS_KEY = "contacts"
