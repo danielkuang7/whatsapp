@@ -16,6 +16,9 @@ export default function Sidebar({id}) {
                     <Tab.Pane eventKey={CONVERSATIONS_KEY}>
                         <Conversations />
                     </Tab.Pane>
+                    <Tab.Pane eventKey={CONTACTS_KEY}>
+                        <Contacts />
+                    </Tab.Pane>
                 </Tab.Content>
                 <Nav.Item>
                     <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
