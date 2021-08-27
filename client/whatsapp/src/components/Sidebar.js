@@ -14,7 +14,7 @@ export default function Sidebar({id}) {
         <div style={{ width: '250px'}} className="d-flex flex-column">
             <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
             <Nav variant="tabs" className="justify-content-center">
-                <Tab.Content>
+                <Tab.Content className="border-right overflow-auto flex-grow-1">
                     <Tab.Pane eventKey={CONVERSATIONS_KEY}>
                         <Conversations />
                     </Tab.Pane>
