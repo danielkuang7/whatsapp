@@ -22,6 +22,9 @@ export default function Sidebar({id}) {
                         <Contacts />
                     </Tab.Pane>
                 </Tab.Content>
+                <div>
+                    Your Id: 
+                </div>
                 <Nav.Item>
                     <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
                 </Nav.Item>
