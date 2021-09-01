@@ -23,7 +23,7 @@ export default function Sidebar({id}) {
                     </Tab.Pane>
                 </Tab.Content>
                 <div>
-                    Your Id: 
+    Your Id: <span className="text-muted">{id}</span>
                 </div>
                 <Nav.Item>
                     <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
