@@ -25,6 +25,9 @@ export default function Sidebar({id}) {
                 <div className="p-2 border-top border-right small">
                     Your Id: <span className="text-muted">{id}</span>
                 </div>
+                <Button>
+                    
+                </Button>
                 <Nav.Item>
                     <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
                 </Nav.Item>
