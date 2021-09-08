@@ -28,7 +28,7 @@ export default function Sidebar({id}) {
                     Your Id: <span className="text-muted">{id}</span>
                 </div>
                 <Button>
-                    New {}
+                    New {conversationsOpen ? 'Conversation' : 'Contact'}
                 </Button>
                 <Nav.Item>
                     <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
