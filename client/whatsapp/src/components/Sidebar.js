@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Tab, Nav, Button } from 'react-bootstrap'
+import { Tab, Nav, Button, Modal } from 'react-bootstrap'
 import Conversations from './Conversations'
 import Contacts from './Contacts'
 
@@ -38,6 +38,9 @@ export default function Sidebar({id}) {
                 </Nav.Item>
             </Nav>
             </Tab.Container>
+            <Modal>
+                
+            </Modal>
 
         </div>
     )
