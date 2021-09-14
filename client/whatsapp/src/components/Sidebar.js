@@ -39,7 +39,10 @@ export default function Sidebar({id}) {
             </Nav>
             </Tab.Container>
             <Modal>
-                
+                {conversationsOpen ?
+                <NewConversationModal/> :
+                <NewContactModal/> 
+                }
             </Modal>
 
         </div>
