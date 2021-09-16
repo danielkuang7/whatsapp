@@ -2,6 +2,9 @@ import React, {useState} from 'react'
 import { Tab, Nav, Button, Modal } from 'react-bootstrap'
 import Conversations from './Conversations'
 import Contacts from './Contacts'
+import NewContactModal from './NewContactModal'
+import NewConversationModal from './NewConversationModal'
+
 
 
 const CONVERSATIONS_KEY = "conversations"
