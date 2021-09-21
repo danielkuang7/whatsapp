@@ -48,8 +48,8 @@ export default function Sidebar({id}) {
             </Tab.Container>
             <Modal>
                 {conversationsOpen ?
-                <NewConversationModal/> :
-                <NewContactModal/> 
+                <NewConversationModal closeModal={closeModal}/> :
+                <NewContactModal closeModal={closeModal}/> 
                 }
             </Modal>
 
