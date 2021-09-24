@@ -3,8 +3,9 @@ import { Modal } from 'React'
 
 export default function NewContactModal({ closeModal}) {
     return (
-        <div>
-            
-        </div>
+        <>
+        <Modal.Header></Modal.Header>
+
+        </>
     )
 }
