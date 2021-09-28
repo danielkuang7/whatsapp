@@ -5,6 +5,9 @@ export default function NewContactModal({ closeModal}) {
     return (
         <>
         <Modal.Header closeButton>Create Contact</Modal.Header>
+        <Modal.Body>
+            
+        </Modal.Body>
         </>
     )
 }
