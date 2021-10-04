@@ -9,7 +9,11 @@ export default function NewContactModal({ closeModal}) {
         <>
         <Modal.Header closeButton>Create Contact</Modal.Header>
         <Modal.Body>
-        <Form onSubmit={handleSubmit}></Form>
+        <Form onSubmit={handleSubmit}>
+            <Form.Group>
+                
+            </Form.Group>
+        </Form>
         </Modal.Body>
         </>
     )
