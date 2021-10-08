@@ -14,6 +14,10 @@ export default function NewContactModal({ closeModal}) {
                 <Form.Label>Id</Form.Label>
                 <Form.Control type="text" ref={idRef} required />
             </Form.Group>
+            <Form.Group>
+                <Form.Label>Name</Form.Label>
+                <Form.Control type="text" ref={nameRef} required />
+            </Form.Group>
         </Form>
         </Modal.Body>
         </>
