@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ContactsContext() {
+export function ContactsContext() {
     return (
         <div>
             
