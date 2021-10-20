@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 
 const ContactsContext = React.createContext()
 
-export function ContactsContext() {
+export function ContactsProvider() {
     return (
         <div>
             
