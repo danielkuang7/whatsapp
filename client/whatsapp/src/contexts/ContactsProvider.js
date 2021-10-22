@@ -4,8 +4,8 @@ const ContactsContext = React.createContext()
 
 export function ContactsProvider({ children }) {
     return (
-        <div>
+        <ContactsContext.Provider>
             
-        </div>
+        </ContactsContext.Provider>
     )
 }
