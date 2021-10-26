@@ -4,7 +4,7 @@ const ContactsContext = React.createContext()
 
 export function ContactsProvider({ children }) {
     return (
-        <ContactsContext.Provider>
+        <ContactsContext.Provider value={{ contacts, createContact }}>
             {children}
         </ContactsContext.Provider>
     )
