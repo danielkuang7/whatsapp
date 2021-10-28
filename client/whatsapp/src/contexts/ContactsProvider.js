@@ -5,6 +5,10 @@ const ContactsContext = React.createContext()
 export function ContactsProvider({ children }) {
     const [contacts, setContacts] = useLocalStorage('contacts', [])
 
+    function createContact(id, name){
+        
+    }
+
     return (
         <ContactsContext.Provider value={{ contacts, createContact }}>
             {children}
