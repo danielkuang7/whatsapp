@@ -2,6 +2,10 @@ import React, { useContext } from 'react'
 
 const ContactsContext = React.createContext()
 
+export function useContacts(){
+    
+}
+
 export function ContactsProvider({ children }) {
     const [contacts, setContacts] = useLocalStorage('contacts', [])
 
