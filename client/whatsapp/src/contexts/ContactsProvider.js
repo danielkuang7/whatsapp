@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 const ContactsContext = React.createContext()
 
 export function useContacts(){
-    return userContext(ContactsContext)
+    return useContext(ContactsContext)
 }
 
 export function ContactsProvider({ children }) {
