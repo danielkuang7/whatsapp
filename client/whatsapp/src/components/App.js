@@ -14,7 +14,7 @@ function App() {
   )
 
   return ( 
-      id ? <Dashboard id={id} /> : <Login onIdSubmit={setId}/> 
+      id ? dashboard : <Login onIdSubmit={setId}/> 
   )
 }
 
