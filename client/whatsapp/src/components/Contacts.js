@@ -5,7 +5,7 @@ import { useContacts } from '../contexts/ContactsProvider';
 export default function Contacts() {
     const { contacts } = useContacts()
     return (
-        <ListGroup>
+        <ListGroup variant="flush">
             Contacts
         </ListGroup>
     )
