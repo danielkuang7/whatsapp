@@ -4,7 +4,7 @@ import { Modal, Form, Button } from 'react-bootstrap'
 export default function NewConversationModal() {
     return (
         <>
-        <Modal.Header closeButton>Create Contact</Modal.Header>
+        <Modal.Header closeButton>Create Conversation</Modal.Header>
         <Modal.Body>
         <Form onSubmit={handleSubmit}>
             <Form.Group>
