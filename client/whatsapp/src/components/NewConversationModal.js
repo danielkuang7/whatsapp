@@ -8,7 +8,7 @@ export default function NewConversationModal() {
         <Modal.Header closeButton>Create Conversation</Modal.Header>
         <Modal.Body>
         <Form onSubmit={handleSubmit}>
-            {contacts.map(contact => {
+            {Contacts.map(contact => {
 
             })}
             <Button type="submit">Create</Button>
