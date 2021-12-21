@@ -9,7 +9,7 @@ export default function NewConversationModal() {
         <Modal.Body>
         <Form onSubmit={handleSubmit}>
             {contacts.map(contact => {
-
+                <Form.Group controlId={contact.id} key={contact.id}></Form.Group>
             })}
             <Button type="submit">Create</Button>
         </Form>
