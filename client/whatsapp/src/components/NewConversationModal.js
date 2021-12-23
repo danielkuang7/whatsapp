@@ -11,7 +11,7 @@ export default function NewConversationModal() {
             {contacts.map(contact => {
                 <Form.Group controlId={contact.id} key={contact.id}>
                     <Form.Check
-
+                        type="checkbox"
                     />
                 </Form.Group>
             })}
