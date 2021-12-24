@@ -12,6 +12,7 @@ export default function NewConversationModal() {
                 <Form.Group controlId={contact.id} key={contact.id}>
                     <Form.Check
                         type="checkbox"
+                        value={selectedContactIds.includes(contact.id)}
                     />
                 </Form.Group>
             })}
