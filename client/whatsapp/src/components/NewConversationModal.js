@@ -14,6 +14,7 @@ export default function NewConversationModal() {
                     <Form.Check
                         type="checkbox"
                         value={selectedContactIds.includes(contact.id)}
+                        label={contact.name}
                     />
                 </Form.Group>
             })}
