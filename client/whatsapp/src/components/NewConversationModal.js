@@ -15,6 +15,7 @@ export default function NewConversationModal() {
                         type="checkbox"
                         value={selectedContactIds.includes(contact.id)}
                         label={contact.name}
+                        onChange={() => handleCheckboxChange(contact.id)}
                     />
                 </Form.Group>
             })}
