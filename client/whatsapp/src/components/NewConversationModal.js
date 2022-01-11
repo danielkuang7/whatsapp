@@ -4,6 +4,11 @@ import { contacts } from '../contexts/ContactsProvider'
 
 export default function NewConversationModal() {
     const [selectedContactIds, setSelectedContactIds] = useState([])
+    
+    function handleCheckboxChange(id){
+        
+    }
+
     return (
         <>
         <Modal.Header closeButton>Create Conversation</Modal.Header>
