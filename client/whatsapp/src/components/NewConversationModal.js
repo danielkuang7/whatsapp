@@ -8,7 +8,9 @@ export default function NewConversationModal() {
     function handleCheckboxChange(contactId){
         setSelectedContactIds(prevSelectedContactIds => {
             if (prevSelectedContactIds.includes(contactId)){
-                
+                return prevSelectedContactIds.filter(prevId => {
+                    
+                })
             }
         })
     }
