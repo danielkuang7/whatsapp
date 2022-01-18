@@ -9,7 +9,7 @@ export default function NewConversationModal() {
         setSelectedContactIds(prevSelectedContactIds => {
             if (prevSelectedContactIds.includes(contactId)){
                 return prevSelectedContactIds.filter(prevId => {
-                    
+                    return contactId !==prevId
                 })
             }
         })
