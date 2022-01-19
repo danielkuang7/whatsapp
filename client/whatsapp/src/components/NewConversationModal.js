@@ -11,6 +11,8 @@ export default function NewConversationModal() {
                 return prevSelectedContactIds.filter(prevId => {
                     return contactId !==prevId
                 })
+            } else {
+                return [...prevSelectedContactIds, id]
             }
         })
     }
