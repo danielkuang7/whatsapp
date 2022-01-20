@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import { Modal, Form, Button } from 'react-bootstrap'
-import { contacts } from '../contexts/ContactsProvider'
+import { useContacts } from '../contexts/ContactsProvider'
 
 export default function NewConversationModal() {
     const [selectedContactIds, setSelectedContactIds] = useState([])
