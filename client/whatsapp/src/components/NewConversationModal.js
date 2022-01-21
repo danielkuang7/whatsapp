@@ -4,7 +4,7 @@ import { useContacts } from '../contexts/ContactsProvider'
 
 export default function NewConversationModal() {
     const [selectedContactIds, setSelectedContactIds] = useState([])
-    
+    const { contacts } = useContacts()
     function handleCheckboxChange(contactId){
         setSelectedContactIds(prevSelectedContactIds => {
             if (prevSelectedContactIds.includes(contactId)){
