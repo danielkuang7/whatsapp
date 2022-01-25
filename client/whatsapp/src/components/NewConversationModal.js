@@ -12,7 +12,7 @@ export default function NewConversationModal() {
                     return contactId !==prevId
                 })
             } else {
-                return [...prevSelectedContactIds, id]
+                return [...prevSelectedContactIds, contactId]
             }
         })
     }
