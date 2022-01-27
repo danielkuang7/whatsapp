@@ -7,7 +7,7 @@ export default function NewConversationModal() {
     const { contacts } = useContacts()
 
     function handleSubmit(e){
-        
+        e.preventDefault()
     }
 
     function handleCheckboxChange(contactId){
