@@ -6,6 +6,7 @@ import { useConversations } from '../components/ConversationsProvider'
 export default function NewConversationModal({ closeModal}) {
     const [selectedContactIds, setSelectedContactIds] = useState([])
     const { contacts } = useContacts()
+    const { createConversation } = useConversations()
 
     function handleSubmit(e){
         e.preventDefault()
