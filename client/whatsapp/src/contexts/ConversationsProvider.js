@@ -3,11 +3,11 @@ import useLocalStorage from '../hooks/useLocalStorage'
 
 const ConversationsContext = React.createContext()
 
-export function useContacts(){
-    return useContext(ContactsContext)
+export function useConversations(){
+    return useContext(ConversationsContext)
 }
 
-export function ContactsProvider({ children }) {
+export function ConversationsProvider({ children }) {
     const [contacts, setContacts] = useLocalStorage('contacts', [])
 
     function createContact(id, name){
