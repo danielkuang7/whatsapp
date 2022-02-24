@@ -8,7 +8,7 @@ export function useConversations(){
 }
 
 export function ConversationsProvider({ children }) {
-    const [conversations, setConversations] = useLocalStorage('contacts', [])
+    const [conversations, setConversations] = useLocalStorage('conversations', [])
 
     function createContact(id, name){
         setContacts(prevContacts => {
