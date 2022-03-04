@@ -12,7 +12,7 @@ export function ConversationsProvider({ children }) {
 
     function createConversation(recipients){
         setConversations(prevConversations => {
-            return [...prevContacts, {id, name}]
+            return [...prevConversations, {id, name}]
         })
     }
 
