@@ -16,6 +16,10 @@ export function ConversationsProvider({ children }) {
         })
     }
 
+    const formattedConversations = conversations.map(conversations => {
+        
+    })
+
     return (
         <ConversationsContext.Provider value={{ conversations, createConversation }}>
             {children}
