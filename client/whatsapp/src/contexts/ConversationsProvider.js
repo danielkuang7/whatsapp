@@ -17,7 +17,7 @@ export function ConversationsProvider({ children }) {
     }
 
     const formattedConversations = conversations.map(conversations => {
-        
+    const recipients = conversation.recipients.map()
     })
 
     return (
