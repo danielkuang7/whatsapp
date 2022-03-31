@@ -10,7 +10,7 @@ export function useConversations(){
 
 export function ConversationsProvider({ children }) {
     const [conversations, setConversations] = useLocalStorage('conversations', [])
-    const { contacts } = useContact()
+    const { contacts } = useContacts()
 
     function createConversation(recipients){
         setConversations(prevConversations => {
@@ -23,6 +23,7 @@ export function ConversationsProvider({ children }) {
         const contact = contacts.find (contact => {
             return contact.id === recipient
         })
+        const name = (contact && contact.name)
     })
     })
 
