@@ -23,7 +23,7 @@ export function ConversationsProvider({ children }) {
         const contact = contacts.find (contact => {
             return contact.id === recipient
         })
-        const name = (contact && contact.name)
+        const name = (contact && contact.name) || recipient
     })
     })
 
