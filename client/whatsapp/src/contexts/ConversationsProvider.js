@@ -24,6 +24,7 @@ export function ConversationsProvider({ children }) {
             return contact.id === recipient
         })
         const name = (contact && contact.name) || recipient
+        return { id: recipient, name }
     })
     })
 
