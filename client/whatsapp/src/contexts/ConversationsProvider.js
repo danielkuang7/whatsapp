@@ -26,6 +26,8 @@ export function ConversationsProvider({ children }) {
         const name = (contact && contact.name) || recipient
         return { id: recipient, name }
     })
+
+    return { ...conversation, recipients}
     })
 
     return (
