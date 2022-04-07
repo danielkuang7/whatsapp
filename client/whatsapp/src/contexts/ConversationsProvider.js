@@ -31,7 +31,7 @@ export function ConversationsProvider({ children }) {
     })
 
     return (
-        <ConversationsContext.Provider value={{ conversations, createConversation }}>
+        <ConversationsContext.Provider value={{ conversations: formattedConversations, createConversation }}>
             {children}
         </ConversationsContext.Provider>
     )
