@@ -31,7 +31,8 @@ export function ConversationsProvider({ children }) {
     })
 
     const value = {
-        conversations: formattedConversations,
+        conversations: formattedConversations, 
+        createConversation
     }
 
     return (
