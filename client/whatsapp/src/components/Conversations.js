@@ -4,7 +4,7 @@ import { ListGroup } from 'react-bootstrap'
 export default function Conversations() {
     return (
         <ListGroup variant="flush">
-        {conversations.map(conversation => (
+        {conversations.map(conversation, index => (
             <ListGroup.Item key={conversation.id}>
                {conversation.name} 
             </ListGroup.Item>
