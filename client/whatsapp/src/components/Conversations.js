@@ -3,13 +3,12 @@ import { ListGroup } from 'react-bootstrap'
 import { useConversations } from '../contexts/ConversationsProvider'
 
 export default function Conversations() {
-    const { conversations }
-    = useConversations()
+    const { conversations } = useConversations()
     return (
         <ListGroup variant="flush">
         {conversations.map(conversation, index => (
-            <ListGroup.Item key={conversation.id}>
-               {conversation.name} 
+            <ListGroup.Item key={index}>
+               {conversation.recipients.map(recipient => recipient.name)} 
             </ListGroup.Item>
         ))}
         </ListGroup>
