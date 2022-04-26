@@ -8,7 +8,7 @@ export default function Conversations() {
         <ListGroup variant="flush">
         {conversations.map(conversation, index => (
             <ListGroup.Item key={index}>
-               {conversation.recipients.map(recipient => recipient.name)} 
+               {conversation.recipients.map(r => r.name).join(',')} 
             </ListGroup.Item>
         ))}
         </ListGroup>
