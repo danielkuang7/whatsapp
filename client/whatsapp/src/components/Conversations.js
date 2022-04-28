@@ -7,7 +7,12 @@ export default function Conversations() {
     return (
         <ListGroup variant="flush">
         {conversations.map(conversation, index => (
-            <ListGroup.Item key={index}>
+            <ListGroup.Item 
+            key={index}
+            action
+            onClick={() => selectedConversationIndex(index)}
+            active={conversation.selected}
+            >
                {conversation.recipients.map(r => r.name).join(',')} 
             </ListGroup.Item>
         ))}
