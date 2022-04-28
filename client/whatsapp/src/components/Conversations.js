@@ -10,6 +10,7 @@ export default function Conversations() {
             <ListGroup.Item 
             key={index}
             action
+            onClick={() => selectedConversationIndex(index)}
             active={conversation.selected}
             >
                {conversation.recipients.map(r => r.name).join(',')} 
