@@ -10,6 +10,7 @@ export function useConversations(){
 
 export function ConversationsProvider({ children }) {
     const [conversations, setConversations] = useLocalStorage('conversations', [])
+    const [selectedConversationIndex, setSelectedConversationIndex]
     const { contacts } = useContacts()
 
     function createConversation(recipients){
