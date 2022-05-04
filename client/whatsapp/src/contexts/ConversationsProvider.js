@@ -34,6 +34,7 @@ export function ConversationsProvider({ children }) {
 
     const value = {
         conversations: formattedConversations, 
+        selectedConversationIndex: setSelectedConversationIndex,
         createConversation
     }
 
