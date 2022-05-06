@@ -29,7 +29,7 @@ export function ConversationsProvider({ children }) {
         return { id: recipient, name }
     })
     const selected = index === selectedConversationIndex
-    return { ...conversation, recipients}
+    return { ...conversation, recipients, selected}
     })
 
     const value = {
