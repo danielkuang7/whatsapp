@@ -7,6 +7,9 @@ export default function OpenConversation() {
             <div className="flex-grow-1 overflow-auto">
 
             </div>
+            <Form>
+                
+            </Form>
         </div>
     )
 }
