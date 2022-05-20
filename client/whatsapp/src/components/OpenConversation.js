@@ -9,7 +9,8 @@ export default function OpenConversation() {
             </div>
             <Form>
                 <Form.Group>
-                    
+                    <InputGroup>
+                    </InputGroup>
                 </Form.Group>
             </Form>
         </div>
