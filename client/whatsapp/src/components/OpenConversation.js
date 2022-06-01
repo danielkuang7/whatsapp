@@ -10,6 +10,11 @@ export default function OpenConversation() {
             <Form>
                 <Form.Group>
                     <InputGroup>
+                    <Form.Control
+                     as="textarea"
+                     required
+                     value={text}
+                     />
                     </InputGroup>
                 </Form.Group>
             </Form>
