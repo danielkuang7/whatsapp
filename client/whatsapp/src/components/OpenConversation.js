@@ -14,6 +14,7 @@ export default function OpenConversation() {
                      as="textarea"
                      required
                      value={text}
+                     onChange={e => setText(e.target.value)}
                      />
                     </InputGroup>
                 </Form.Group>
