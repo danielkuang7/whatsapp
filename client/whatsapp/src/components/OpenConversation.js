@@ -9,7 +9,7 @@ export default function OpenConversation() {
 
             </div>
             <Form>
-                <Form.Group>
+                <Form.Group className="m-2">
                     <InputGroup>
                     <Form.Control
                      as="textarea"
