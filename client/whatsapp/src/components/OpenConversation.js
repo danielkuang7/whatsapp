@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, InputGroup } from 'react-bootstrap'
+import { Form, InputGroup, Button } from 'react-bootstrap'
 
 export default function OpenConversation() {
     const [text, setText] = useState('')
@@ -19,6 +19,7 @@ export default function OpenConversation() {
                      style={{ height: '75px', resize: 'none'}}
                      />
                      <InputGroup.Append>
+                     <Button type="submit">Send</Button>
                      </InputGroup.Append>
                     </InputGroup>
                 </Form.Group>
