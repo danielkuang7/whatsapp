@@ -8,7 +8,7 @@ export default function OpenConversation() {
             <div className="flex-grow-1 overflow-auto">
 
             </div>
-            <Form>
+            <Form onSubmit={handleSubmit}>
                 <Form.Group className="m-2">
                     <InputGroup>
                     <Form.Control
