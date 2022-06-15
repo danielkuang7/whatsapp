@@ -3,6 +3,11 @@ import { Form, InputGroup, Button } from 'react-bootstrap'
 
 export default function OpenConversation() {
     const [text, setText] = useState('')
+
+    function handleSubmit(e) {
+        e.preventDefault()
+    }
+
     return (
         <div className="d-flex flex-column flex-grow-1">
             <div className="flex-grow-1 overflow-auto">
