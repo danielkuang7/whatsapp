@@ -6,6 +6,8 @@ export default function OpenConversation() {
 
     function handleSubmit(e) {
         e.preventDefault()
+
+        sendMessage()
     }
 
     return (
