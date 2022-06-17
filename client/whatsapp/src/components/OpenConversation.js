@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { Form, InputGroup, Button } from 'react-bootstrap'
+import { useConversations } from '../contexts/ConversationsProvider'
 
 export default function OpenConversation() {
     const [text, setText] = useState('')
+    const { sendMessage } = useConversations()
 
     function handleSubmit(e) {
         e.preventDefault()
