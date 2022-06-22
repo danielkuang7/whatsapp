@@ -4,12 +4,12 @@ import { useConversations } from '../contexts/ConversationsProvider'
 
 export default function OpenConversation() {
     const [text, setText] = useState('')
-    const { sendMessage } = useConversations()
+    const { sendMessage, selectedConversation } = useConversations()
 
     function handleSubmit(e) {
         e.preventDefault()
 
-        sendMessage(selectedConversation)
+        sendMessage(selectedConversation.recipients.map(r => r.id))
     }
 
     return (
