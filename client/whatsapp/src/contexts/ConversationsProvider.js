@@ -20,7 +20,13 @@ export function ConversationsProvider({ children }) {
         })
     }
 
-    function addMessageToConversation({ recipients, text, sender})
+    function addMessageToConversation({ recipients, text, sender}) {
+
+    }
+
+    function sendMessage(recipients, text) {
+        
+    }
 
     const formattedConversations = conversations.map(conversation, index => {
     const recipients = conversation.recipients.map(recipient =>{
