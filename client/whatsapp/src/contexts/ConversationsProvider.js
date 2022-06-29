@@ -25,7 +25,7 @@ export function ConversationsProvider({ children }) {
     }
 
     function sendMessage(recipients, text) {
-        
+        addMessageToConversation({ recipients, text, sender: id})
     }
 
     const formattedConversations = conversations.map(conversation, index => {
