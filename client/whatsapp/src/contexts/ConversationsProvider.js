@@ -8,7 +8,7 @@ export function useConversations(){
     return useContext(ConversationsContext)
 }
 
-export function ConversationsProvider({ children }) {
+export function ConversationsProvider({ id, children }) {
     const [conversations, setConversations] = useLocalStorage('conversations', [])
     const [selectedConversationIndex, setSelectedConversationIndex] =
     useState(0)
