@@ -44,6 +44,7 @@ export function ConversationsProvider({ id, children }) {
         conversations: formattedConversations, 
         selectedConversation: formattedConversations
         [selectedConversationIndex],
+        sendMessage,
         selectedConversationIndex: setSelectedConversationIndex,
         createConversation
     }
