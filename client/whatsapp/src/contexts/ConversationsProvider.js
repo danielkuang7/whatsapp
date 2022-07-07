@@ -23,7 +23,7 @@ export function ConversationsProvider({ id, children }) {
     function addMessageToConversation({ recipients, text, sender
     }) {
         setConversations(prevConversations => {
-            
+            let madeChange = false
         })
 
     }
