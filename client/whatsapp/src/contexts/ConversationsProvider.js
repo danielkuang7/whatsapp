@@ -24,6 +24,13 @@ export function ConversationsProvider({ id, children }) {
     }) {
         setConversations(prevConversations => {
             let madeChange = false
+            
+            if (madeChange){
+
+            }else {
+                return [...prevConversations, { recipients, messages:
+                [newMessage]}]
+            }
         })
 
     }
