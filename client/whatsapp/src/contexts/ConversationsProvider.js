@@ -24,6 +24,7 @@ export function ConversationsProvider({ id, children }) {
     }) {
         setConversations(prevConversations => {
             let madeChange = false
+            const newMessage = { sender, text }
             
             if (madeChange){
 
