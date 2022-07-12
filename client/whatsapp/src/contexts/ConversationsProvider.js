@@ -25,12 +25,17 @@ export function ConversationsProvider({ id, children }) {
         setConversations(prevConversations => {
             let madeChange = false
             const newMessage = { sender, text }
+            const newConversations = prevConversations.map (conversation => {
+                
+            })
             
             if (madeChange){
 
             }else {
-                return [...prevConversations, { recipients, messages:
-                [newMessage]}]
+                return [
+                    ...prevConversations, { recipients, messages:
+                [newMessage]}
+            ]
             }
         })
 
