@@ -26,7 +26,10 @@ export function ConversationsProvider({ id, children }) {
             let madeChange = false
             const newMessage = { sender, text }
             const newConversations = prevConversations.map (conversation => {
-                
+                if (arrayEquality(conversation.recipients, recipients))
+                {
+                    
+                }
             })
             
             if (madeChange){
