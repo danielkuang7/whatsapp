@@ -34,6 +34,8 @@ export function ConversationsProvider({ id, children }) {
                         messages: [...conversation.messages, newMessage]
                     }
                 }
+
+                return conversation
             })
             
             if (madeChange){
