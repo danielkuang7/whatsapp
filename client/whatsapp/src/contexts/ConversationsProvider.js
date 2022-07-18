@@ -39,7 +39,7 @@ export function ConversationsProvider({ id, children }) {
             })
             
             if (madeChange){
-
+                return newConversations
             }else {
                 return [
                     ...prevConversations, { recipients, messages:
