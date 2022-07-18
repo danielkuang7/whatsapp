@@ -34,10 +34,12 @@ export function ConversationsProvider({ id, children }) {
                         messages: [...conversation.messages, newMessage]
                     }
                 }
+
+                return conversation
             })
             
             if (madeChange){
-
+                return newConversations
             }else {
                 return [
                     ...prevConversations, { recipients, messages:
