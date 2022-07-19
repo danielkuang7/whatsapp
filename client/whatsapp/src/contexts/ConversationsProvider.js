@@ -81,3 +81,7 @@ export function ConversationsProvider({ id, children }) {
         </ConversationsContext.Provider>
     )
 }
+
+function arrayEquality(a, b){
+    
+}
