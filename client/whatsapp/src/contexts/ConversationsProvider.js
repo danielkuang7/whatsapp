@@ -83,5 +83,5 @@ export function ConversationsProvider({ id, children }) {
 }
 
 function arrayEquality(a, b){
-    
+    if (a.length !== b.length) return false 
 }
