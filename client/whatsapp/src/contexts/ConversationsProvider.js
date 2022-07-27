@@ -68,6 +68,7 @@ export function ConversationsProvider({ id, children }) {
             return contact.id === message.sender
         })
         const name = (contact && contact.name) || message.sender
+        const fromMe = id === message.sender
     })
 
     const selected = index === selectedConversationIndex
