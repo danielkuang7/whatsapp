@@ -21,7 +21,8 @@ export default function OpenConversation() {
             <div className="flex-grow-1 overflow-auto">
             <div className="h-100 d-flex flex-column
             align-items-start justify-content-end px-3">
-                {selectedConversation.messages.map()}
+                {selectedConversation.messages.map((message, index))
+                }
             </div>
             </div>
             <Form onSubmit={handleSubmit}>
