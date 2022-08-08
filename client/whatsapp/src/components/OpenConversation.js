@@ -26,6 +26,7 @@ export default function OpenConversation() {
                     return(
                         <div
                         key={index}
+                        className="my-1 d-flex flex-column"
                         >
 
                         </div>
