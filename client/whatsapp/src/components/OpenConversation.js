@@ -28,7 +28,7 @@ export default function OpenConversation() {
                         key={index}
                         className="my-1 d-flex flex-column"
                         >
-
+                            <div>{message.text}</div>
                         </div>
                     )
                 }}
