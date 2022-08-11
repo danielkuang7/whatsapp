@@ -29,6 +29,8 @@ export default function OpenConversation() {
                         className="my-1 d-flex flex-column"
                         >
                             <div>{message.text}</div>
+                            <div>{message.formMe ? 'You' :
+                            message.senderName}</div>
                         </div>
                     )
                 }}
