@@ -28,9 +28,12 @@ export default function OpenConversation() {
                         key={index}
                         className="my-1 d-flex flex-column"
                         >
-                            <div>{message.text}</div>
-                            <div>{message.formMe ? 'You' :
-                            message.senderName}</div>
+                            <div className={`rounded px-2 py-1 ${message.from ? 'bg-primary text-white' : 'border'}`}>
+                                {message.text}
+                            </div>
+                            <div>
+                                {message.formMe ? 'You' : message.senderName}
+                            </div>
                         </div>
                     )
                 }}
