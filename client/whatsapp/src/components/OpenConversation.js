@@ -31,7 +31,7 @@ export default function OpenConversation() {
                             <div className={`rounded px-2 py-1 ${message.from ? 'bg-primary text-white' : 'border'}`}>
                                 {message.text}
                             </div>
-                            <div>
+                            <div className={`text-muted small ${message.fromMe ? 'text-right' : ''}`}>
                                 {message.formMe ? 'You' : message.senderName}
                             </div>
                         </div>
