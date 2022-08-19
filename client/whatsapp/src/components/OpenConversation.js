@@ -17,6 +17,10 @@ export default function OpenConversation() {
             setText('')
     }
 
+    useEffect(() => {
+        
+    })
+
     return (
         <div className="d-flex flex-column flex-grow-1">
             <div className="flex-grow-1 overflow-auto">
