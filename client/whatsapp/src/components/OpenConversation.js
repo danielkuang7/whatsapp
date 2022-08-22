@@ -18,8 +18,8 @@ export default function OpenConversation() {
     }
 
     useEffect(() => {
-        
-    })
+
+    }, lastMessageRef.current)
 
     return (
         <div className="d-flex flex-column flex-grow-1">
