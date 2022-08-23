@@ -18,7 +18,9 @@ export default function OpenConversation() {
     }
 
     useEffect(() => {
-
+        if (lastMessageRef.current){
+            
+        }
     }, lastMessageRef.current)
 
     return (
