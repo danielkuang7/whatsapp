@@ -21,7 +21,7 @@ export default function OpenConversation() {
         if (lastMessageRef.current){
             lastMessageRef.current.scrollIntoView({ smooth: true})
         }
-    }, [lastMessageRef.current])
+    })
 
     return (
         <div className="d-flex flex-column flex-grow-1">
@@ -32,6 +32,7 @@ export default function OpenConversation() {
                 => {
                     return(
                         <div
+                        ref={lastMessage ? lastMessageRef : null}
                         key={index}
                         className={`my-1 d-flex flex-column ${message.fromMe ? 'align-self-end' : ''}`}
                         >
