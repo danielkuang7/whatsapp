@@ -30,6 +30,8 @@ export default function OpenConversation() {
             align-items-start justify-content-end px-3">
                 {selectedConversation.messages.map((message, index)
                 => {
+                    const lastMessage =
+                    selectedConversation.messages.length - 1 === index
                     return(
                         <div
                         ref={lastMessage ? lastMessageRef : null}
