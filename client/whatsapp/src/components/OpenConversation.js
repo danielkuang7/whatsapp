@@ -21,7 +21,7 @@ export default function OpenConversation() {
         if (lastMessageRef.current){
             lastMessageRef.current.scrollIntoView({ smooth: true})
         }
-    })
+    }, [lastMessageRef.current])
 
     return (
         <div className="d-flex flex-column flex-grow-1">
