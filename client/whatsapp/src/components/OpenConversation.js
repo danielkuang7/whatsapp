@@ -5,7 +5,9 @@ import { useConversations } from '../contexts/ConversationsProvider'
 export default function OpenConversation() {
     const [text, setText] = useState('')
     const lastMessageRef = useRef()
-    const setRef = useCallback()
+    const setRef = useCallback(node => {
+        
+    })
     const { sendMessage, selectedConversation } = useConversations()
 
     function handleSubmit(e) {
