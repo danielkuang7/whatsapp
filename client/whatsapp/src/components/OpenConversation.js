@@ -6,7 +6,7 @@ export default function OpenConversation() {
     const [text, setText] = useState('')
     const lastMessageRef = useRef()
     const setRef = useCallback(node => {
-        
+        lastMessageRef.current = node
     })
     const { sendMessage, selectedConversation } = useConversations()
 
