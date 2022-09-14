@@ -4,10 +4,9 @@ import { useConversations } from '../contexts/ConversationsProvider'
 
 export default function OpenConversation() {
     const [text, setText] = useState('')
-    const lastMessageRef = useRef()
     const setRef = useCallback(node => {
-        lastMessageRef.current = node
-    })
+        node.scrollIntoView({ smooth: true})
+    }, [])
     const { sendMessage, selectedConversation } = useConversations()
 
     function handleSubmit(e) {
@@ -20,12 +19,6 @@ export default function OpenConversation() {
             setText('')
     }
 
-    useEffect(() => {
-        if (lastMessageRef.current){
-            lastMessageRef.current.scrollIntoView({ smooth: true})
-        }
-    })
-
     return (
         <div className="d-flex flex-column flex-grow-1">
             <div className="flex-grow-1 overflow-auto">
@@ -37,7 +30,7 @@ export default function OpenConversation() {
                     selectedConversation.messages.length - 1 === index
                     return(
                         <div
-                        ref={lastMessage ? lastMessageRef : null}
+                        ref={lastMessage ? setRef : null}
                         key={index}
                         className={`my-1 d-flex flex-column ${message.fromMe ? 'align-self-end' : ''}`}
                         >
