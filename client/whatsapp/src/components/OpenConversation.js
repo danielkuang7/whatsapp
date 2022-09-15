@@ -5,7 +5,9 @@ import { useConversations } from '../contexts/ConversationsProvider'
 export default function OpenConversation() {
     const [text, setText] = useState('')
     const setRef = useCallback(node => {
+      if (node) {
         node.scrollIntoView({ smooth: true})
+        }
     }, [])
     const { sendMessage, selectedConversation } = useConversations()
 
